@@ -9,14 +9,14 @@
                 <hr class="divider"  data-aos="fade-in" data-aos-duration="2200">
                 <div class="row mt-5 justify-content-center">
                     <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1">
+                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal1">
                             <div class="mb-2"><i class="fa-solid fa-hand-holding-dollar fs-1"  data-aos="fade-in" data-aos-duration="2500"></i></div>
                             <hr class="divider" data-aos="fade-in" data-aos-duration="2600">
                             <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2700">PEMBIAYAAN SISTEM GRAMEEN BANK</h3>
                         </div>
                     </div>
                     <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1">
+                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal2">
                             <div class="mb-2" data-aos="fade-in" data-aos-duration="2300"><i class="fa-solid fa-hand-holding-dollar fs-1"></i></div>
                             <hr class="divider" data-aos="fade-in" data-aos-duration="2400">
                             <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2500">PEMBIAYAAN KHUSUS</h3>
@@ -25,14 +25,14 @@
                 </div>
                 <div class="row mt-5 justify-content-center">
                     <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1">
+                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal3">
                             <div class="mb-2"><i class="fa-solid fa-coins fs-1"  data-aos="fade-in" data-aos-duration="2500"></i></div>
                             <hr class="divider" data-aos="fade-in" data-aos-duration="2600">
                             <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2700">SIMPANAN BERJANGKA (SIMBA)</h3>
                         </div>
                     </div>
                     <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1">
+                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal4">
                             <div class="mb-2" data-aos="fade-in" data-aos-duration="2300"><i class="fa-solid fa-coins fs-1"></i></div>
                             <hr class="divider" data-aos="fade-in" data-aos-duration="2400">
                             <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2500">SIMPANAN SUKARELA</h3>
@@ -41,14 +41,14 @@
                 </div>
                 <div class="row mt-5 justify-content-center">
                     <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1">
+                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal5">
                             <div class="mb-2" data-aos="fade-in" data-aos-duration="2300"><i class="fa-solid fa-person-dress fs-1"></i></div>
                             <hr class="divider" data-aos="fade-in" data-aos-duration="2400">
                             <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2500">PELAYANAN KESEHATAN UNTUK PEREMPUAN</h3>
                         </div>
                     </div>
                     <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1">
+                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal6">
                             <div class="mb-2"><i class="fa-solid fa-person-dress fs-1"  data-aos="fade-in" data-aos-duration="2500"></i></div>
                             <hr class="divider" data-aos="fade-in" data-aos-duration="2600">
                             <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2700">PELAYANAN PENGEMBANGAN WIRAUSAHA PEREMPUAN</h3>

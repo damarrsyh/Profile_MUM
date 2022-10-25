@@ -2,7 +2,7 @@
 
 @section('page')
     <!--Section Article-->
-    <div class="container px-4 px-lg-5 py-5 my-5" id="news">
+    <div class="container px-4 px-lg-5 py-5 my-5" id="services">
         <div class="row g-0">
             <div class="col-md-9 py-5 px-5" style="border-radius: 15px; background: var(--bs-gray-100);">
                 <div class="card mb-3">

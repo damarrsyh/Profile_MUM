@@ -31,10 +31,18 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav menu ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#gallery">Gallery</a></li>
+                        @if (!Request::is("news") | !Request::is("article"))
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#services">Services</a></li>
+                        @endif
+                        @if (!Request::is("news"))
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#services">Article</a></li>
+                        @endif
+                        @if (!Request::is("news") || !Request::is("article"))
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#about">About</a></li>
+                        @endif
+                        @if (!Request::is("article"))
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#news">News</a></li>
+                        @endif
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -348,5 +356,5 @@
                 
             })
         </script>
-    </body>       
+    </body>      
 </html>
