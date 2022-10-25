@@ -12735,3 +12735,7 @@ section {
   border-radius: 15px;
   background: var(--bs-gray-100);
 }
+
+.arnews-text {
+  text-indent: 45px;
+}

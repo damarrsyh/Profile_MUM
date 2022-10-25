@@ -31,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav menu ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#gallery">Gallery</a></li>
-                        @if (!Request::is("news") | !Request::is("article"))
+                        @if (!Request::is("news") || !Request::is("article"))
                         <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#services">Services</a></li>
                         @endif
                         @if (!Request::is("news"))
@@ -74,41 +74,41 @@
                         </div>
                         <div class="carousel-item active">
                             <img src="/assets/media/img/mum/2.jpg" class="d-block w-100" alt="...">
-                                <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                                    <div class="col-lg-8 align-self-end">
-                                        <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
-                                    </div>
-                                    <div class="col-lg-8 align-self-baseline">
-                                        <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
-                                        <hr class="divider" />
-                                        <!-- Button trigger modal -->
-                                        <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                            <div class="wrapper">
-                                                <i class="fa-solid fa-angle-right"></i>
-                                                <span>More</span>
-                                            </div>
-                                        </a>
-                                    </div>
+                            <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
                                 </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
+                                    <hr class="divider" />
+                                    <!-- Button trigger modal -->
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            <span>More</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item">
                             <img src="/assets/media/img/mum/3.jpg" class="d-block w-100" alt="...">
-                                <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                                    <div class="col-lg-8 align-self-end">
-                                        <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
-                                    </div>
-                                    <div class="col-lg-8 align-self-baseline">
-                                        <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
-                                        <hr class="divider" />
-                                        <!-- Button trigger modal -->
-                                        <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                            <div class="wrapper">
-                                                <i class="fa-solid fa-angle-right"></i>
-                                                <span>More</span>
-                                            </div>
-                                        </a>
-                                    </div>
+                            <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
                                 </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
+                                    <hr class="divider" />
+                                    <!-- Button trigger modal -->
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            <span>More</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">

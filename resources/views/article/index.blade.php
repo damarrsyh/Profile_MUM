@@ -10,7 +10,10 @@
                     <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ullam, optio adipisci eaque iusto fugiat impedit, aspernatur deleniti provident a laboriosam sit esse assumenda porro id nostrum animi nemo minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque dignissimos cum eius non obcaecati saepe alias, qui, minus error impedit asperiores? Laboriosam sed repudiandae, delectus odit vero harum sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vel odio voluptas exercitationem a esse, corporis ad deleniti iusto ipsam ducimus dolores porro commodi culpa voluptates voluptate eaque placeat nulla?</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ullam, optio adipisci eaque iusto fugiat impedit, aspernatur deleniti provident a laboriosam sit esse assumenda porro id nostrum animi nemo minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque dignissimos cum eius non obcaecati saepe alias, qui, minus error impedit asperiores? Laboriosam sed repudiandae, delectus odit vero harum sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vel odio voluptas exercitationem a esse, corporis ad deleniti iusto ipsam ducimus dolores porro commodi culpa voluptates voluptate eaque placeat nulla?</p>
                     </div>
                 </div>
             </div>
