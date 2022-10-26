@@ -328,7 +328,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                ...
+                <p>Metode Grameen Bank merupakan program penyaluran kredit mikro yang ditujukan bagi golongan masyarakat miskin di pedesaan.</p>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -360,7 +360,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                ...
+                <p> Simpanan Berjangka adalah simpanan di koperasi yang penyetorannya dilakukan sekali dan penarikannya hanya dapat dilakukan pada waktu tertentu menurut perjanjian antara penyimpan dengan koperasi yang bersangkutan.</p>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -376,7 +376,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                ...
+                <p>Simpanan sukarela adalah iuran yang dibayar oleh anggota koperasi secara sukarela atau tidak ada paksaan dimana besarnya iuran sesuai dengan kemampuan masing-masing anggota. Simpanan ini bisa diambil sewaktu-waktu sesuai dengan jumlah simpanan anggota yang bersangkutan.</p>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

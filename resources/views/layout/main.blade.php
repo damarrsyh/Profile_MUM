@@ -26,7 +26,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand fw-bold" href="#page-top"> <img src="/assets/media/img/mum/navbar-logo-ww.png" height="70px"></a>
+                <a class="navbar-brand fw-bold" href="/"> <img src="/assets/media/img/mum/navbar-logo-ww.png" height="70px"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav menu ms-auto my-2 my-lg-0">
