@@ -57,8 +57,13 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3" id="services">
+                <a type="button" class="btn btn-primary d-grid gap-2 col-8 mx-2 mb-5 float-end" href="/article" data-aos="fade-left" data-aos-duration="2200">
+                    <div class="wrapper">
+                        <span>Create Article</span>
+                    </div>
+                </a>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
-                    <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <div class="card-body px-3">
                         <h5 class="card-title fw-bold">Card title</h5>
                         <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -66,6 +71,16 @@
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>More</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Edit</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Delete</span>
                             </div>
                         </a>
                     </div>
@@ -79,6 +94,16 @@
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>More</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Edit</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Delete</span>
                             </div>
                         </a>
                     </div>
@@ -251,6 +276,11 @@
                 </ul>
             </div>
             <div class="col-md-4 float-end" id="news">
+                <a type="button" class="btn btn-primary d-grid gap-2 col-6 mx-2 mb-5 float-end" href="/article" data-aos="fade-left" data-aos-duration="2200">
+                    <div class="wrapper">
+                        <span>Create News</span>
+                    </div>
+                </a>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
                     <img src="/assets/media/img/artikel/3.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <div class="card-body px-3">
@@ -260,6 +290,16 @@
                         <a type="button" class="btn btn-primary" href="/news">
                             <div class="wrapper">
                                 <span>More</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Edit</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Delete</span>
                             </div>
                         </a>
                     </div>
@@ -275,6 +315,16 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Edit</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Delete</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -288,6 +338,16 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Edit</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Delete</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -299,6 +359,16 @@
                         <a type="button" class="btn btn-primary" href="/news">
                             <div class="wrapper">
                                 <span>More</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Edit</span>
+                            </div>
+                        </a>
+                        <a type="button" class="btn btn-primary" href="/article">
+                            <div class="wrapper">
+                                <span>Delete</span>
                             </div>
                         </a>
                     </div>

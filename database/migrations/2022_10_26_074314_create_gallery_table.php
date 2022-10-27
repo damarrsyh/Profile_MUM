@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('gallery', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->text('name');
             $table->string('jenis');
             $table->string('kegiatan');
             $table->timestamps();

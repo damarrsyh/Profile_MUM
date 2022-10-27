@@ -26,7 +26,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand fw-bold" href="/"> <img src="/assets/media/img/mum/navbar-logo-ww.png" height="70px"></a>
+                <a class="navbar-brand fw-bold" href="/"><img src="/assets/media/img/mum/navbar-logo-ww.png" height="70px"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav menu ms-auto my-2 my-lg-0">
@@ -65,8 +65,18 @@
                                     <!-- Button trigger modal -->
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
+                                            <span>Change All Background</span>
+                                        </div>
+                                    </a>
+                                    <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
                                             <span>More</span>
+                                        </div>
+                                    </a>
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <span>Edit</span>
                                         </div>
                                     </a>
                                 </div>
@@ -84,8 +94,18 @@
                                     <!-- Button trigger modal -->
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
+                                            <span>Change All Background</span>
+                                        </div>
+                                    </a>
+                                    <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
                                             <span>More</span>
+                                        </div>
+                                    </a>
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <span>Edit</span>
                                         </div>
                                     </a>
                                 </div>
@@ -103,8 +123,18 @@
                                     <!-- Button trigger modal -->
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
+                                            <span>Change All Background</span>
+                                        </div>
+                                    </a>
+                                    <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
                                             <span>More</span>
+                                        </div>
+                                    </a>
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <span>Edit</span>
                                         </div>
                                     </a>
                                 </div>
@@ -125,6 +155,21 @@
         <!--Summary-->
         <section class="page-section" id="summary">
             <div class="container-fluid">
+                <a class="btn btn-primary btn-lg mx-3 my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-right" data-aos-duration="2300">
+                    <div class="wrapper">
+                        <span>Create New</span>
+                    </div>
+                </a>
+                <a class="btn btn-primary btn-lg float-end mx-3 my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
+                    <div class="wrapper">
+                        <span>Delete</span>
+                    </div>
+                </a>
+                <a class="btn btn-primary btn-lg float-end my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
+                    <div class="wrapper">
+                        <span>Edit</span>
+                    </div>
+                </a>
                 <div class="row g-0" data-aos="fade-up" data-aos-duration="2300">
                     <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
                         <div class="my-5 p-3 hov-1">
@@ -172,6 +217,21 @@
         <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid" id="gallery" data-aos="fade-in" data-aos-duration="3000">
+                <a class="btn btn-primary btn-lg mx-3 my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-right" data-aos-duration="2300">
+                    <div class="wrapper">
+                        <span>Create New</span>
+                    </div>
+                </a>
+                <a class="btn btn-primary btn-lg float-end mx-3 my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
+                    <div class="wrapper">
+                        <span>Delete</span>
+                    </div>
+                </a>
+                <a class="btn btn-primary btn-lg float-end my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
+                    <div class="wrapper">
+                        <span>Edit</span>
+                    </div>
+                </a>
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">
