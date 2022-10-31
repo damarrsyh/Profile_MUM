@@ -19,7 +19,7 @@
 				<div class="d-flex flex-column flex-row-fluid position-relative p-7 overflow-hidden">
 					<div class="position-absolute top-0 right-0 text-right mt-5 mb-15 mb-lg-0 flex-column-auto justify-content-center py-5 px-10">
 						<span class="font-weight-bold text-dark-50">Have an already account?</span>
-						<a href="/" class="font-weight-bold ml-2" id="kt_login_signup">Sign In!</a>
+						<a href="/sign_in" class="font-weight-bold ml-2" id="kt_login_signup">Sign In!</a>
 					</div>
 					<div class="d-flex flex-column-fluid flex-center mt-30 mt-lg-0">
 						<div class="login-form login-signin">
@@ -42,7 +42,7 @@
 									<input class="form-control form-control-solid h-auto py-5 px-6" type="password" placeholder="Repeat Password" name="repeat_password" autocomplete="off" />
 								</div>
 								<div class="form-group d-flex flex-wrap justify-content-end align-items-center">
-									<button type="submit" class="btn btn-primary font-weight-bold px-9 py-4 my-3">Sign Up</button>
+									<button type="submit" class="btn btn-primary font-weight-bold w-100 px-9 py-4 my-3">Sign Up</button>
 								</div>
 							</form>
 						</div>
