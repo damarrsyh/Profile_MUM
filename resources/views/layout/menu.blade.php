@@ -25,14 +25,14 @@
                 <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="visually-hidden">Toggle Dropdown</span>
                 </button>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item" href="/logout">Logout</a></li>
                 </ul>
             </div>
             @else
-            <button type="button" class="btn btn-success fw-bold">
+            <button type="button" class="btn btn-primary fw-bold">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link ms-auto fw-bold fs-5 text-uppercase" href="/sign_in">Sign In</a></li>
+                    <li class="nav-item"><a class="nav-link ms-auto fw-bold fs-5 px-3" href="/sign_in">Sign In</a></li>
                 </ul>
             </button>
             @endauth
