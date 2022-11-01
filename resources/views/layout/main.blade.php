@@ -42,20 +42,22 @@
                                     <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
                                     <hr class="divider" />
                                     <!-- Button trigger modal -->
+                                    @if (session('role') == 'admin')
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <span>Change All Background</span>
                                         </div>
                                     </a>
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <span>Edit</span>
+                                        </div>
+                                    </a>
+                                    @endif
                                     <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
                                             <span>More</span>
-                                        </div>
-                                    </a>
-                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                        <div class="wrapper">
-                                            <span>Edit</span>
                                         </div>
                                     </a>
                                 </div>
@@ -71,20 +73,22 @@
                                     <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
                                     <hr class="divider" />
                                     <!-- Button trigger modal -->
+                                    @if (session('role') == 'admin')
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <span>Change All Background</span>
                                         </div>
                                     </a>
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <span>Edit</span>
+                                        </div>
+                                    </a>
+                                    @endif
                                     <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
                                             <span>More</span>
-                                        </div>
-                                    </a>
-                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                        <div class="wrapper">
-                                            <span>Edit</span>
                                         </div>
                                     </a>
                                 </div>
@@ -100,15 +104,10 @@
                                     <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
                                     <hr class="divider" />
                                     <!-- Button trigger modal -->
+                                    @if (session('role') == 'admin')
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <span>Change All Background</span>
-                                        </div>
-                                    </a>
-                                    <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
-                                        <div class="wrapper">
-                                            <i class="fa-solid fa-angle-right"></i>
-                                            <span>More</span>
                                         </div>
                                     </a>
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
@@ -116,6 +115,14 @@
                                             <span>Edit</span>
                                         </div>
                                     </a>
+                                    @endif
+                                    <a class="btn btn-primary btn-xl mx-3" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            <span>More</span>
+                                        </div>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -134,6 +141,7 @@
         <!--Summary-->
         <section class="page-section" id="summary">
             <div class="container-fluid">
+                @if (session('role') == 'admin')   
                 <a class="btn btn-primary btn-lg mx-3 my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-right" data-aos-duration="2300">
                     <div class="wrapper">
                         <span>Create New</span>
@@ -149,6 +157,7 @@
                         <span>Edit</span>
                     </div>
                 </a>
+                @endif
                 <div class="row g-0" data-aos="fade-up" data-aos-duration="2300">
                     <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
                         <div class="my-5 p-3 hov-1">
@@ -196,6 +205,7 @@
         <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid" id="gallery" data-aos="fade-in" data-aos-duration="3000">
+                @if (session('role') == 'admin')    
                 <a class="btn btn-primary btn-lg mx-3 my-5" href="#summary" style="border-radius: 10px;" data-aos="fade-right" data-aos-duration="2300">
                     <div class="wrapper">
                         <span>Create New</span>
@@ -211,6 +221,7 @@
                         <span>Edit</span>
                     </div>
                 </a>
+                @endif
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">

@@ -6,7 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
-// use App\Http\Middleware\Roles;
+use App\Http\Middleware\CheckRole;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,5 +27,5 @@ Route::get('/article', [ArticleController::class, 'index']);
 Route::get('/news', [NewsController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
 
-// Route::group(['middleware' => ['auth', 'roles:admin,user']], function(){
+// Route::middleware('role:admin,user,guest')->group(function(){
 // });

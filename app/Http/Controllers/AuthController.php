@@ -45,6 +45,11 @@ class AuthController extends Controller
       'email' => ['required', 'email'],
       'password' => ['required'],
     ]);
+
+    session([
+      'role' => 'admin',
+      'role' => 'user'
+    ]);
     
     if (Auth::attempt($user)) {
       // return response()->json('berhasil login');

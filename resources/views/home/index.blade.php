@@ -57,11 +57,13 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3" id="services">
+                @if (session('role') == 'admin')
                 <a type="button" class="btn btn-primary d-grid gap-2 col-8 mx-2 mb-5 float-end" href="/article" data-aos="fade-left" data-aos-duration="2200">
                     <div class="wrapper">
                         <span>Create Article</span>
                     </div>
                 </a>
+                @endif
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
                 <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <div class="card-body px-3">
@@ -73,6 +75,7 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        @if (session('role') == 'admin')
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>Edit</span>
@@ -83,6 +86,7 @@
                                 <span>Delete</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
@@ -96,9 +100,10 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        @if (session('role') == 'admin')
                         <a type="button" class="btn btn-primary" href="/article">
-                            <div class="wrapper">
-                                <span>Edit</span>
+                        <div class="wrapper">
+                            <span>Edit</span>
                             </div>
                         </a>
                         <a type="button" class="btn btn-primary" href="/article">
@@ -106,6 +111,7 @@
                                 <span>Delete</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -276,11 +282,13 @@
                 </ul>
             </div>
             <div class="col-md-4 float-end" id="news">
+                @if (session('role') == 'admin')
                 <a type="button" class="btn btn-primary d-grid gap-2 col-6 mx-2 mb-5 float-end" href="/article" data-aos="fade-left" data-aos-duration="2200">
                     <div class="wrapper">
                         <span>Create News</span>
                     </div>
                 </a>
+                @endif
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
                     <img src="/assets/media/img/artikel/3.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <div class="card-body px-3">
@@ -292,6 +300,7 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        @if (session('role') == 'admin')                    
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>Edit</span>
@@ -302,6 +311,7 @@
                                 <span>Delete</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -315,6 +325,7 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        @if (session('role') == 'admin')
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>Edit</span>
@@ -325,6 +336,7 @@
                                 <span>Delete</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -338,6 +350,7 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        @if (session('role') == 'admin')
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>Edit</span>
@@ -348,6 +361,7 @@
                                 <span>Delete</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -361,6 +375,7 @@
                                 <span>More</span>
                             </div>
                         </a>
+                        @if (session('role') == 'admin')
                         <a type="button" class="btn btn-primary" href="/article">
                             <div class="wrapper">
                                 <span>Edit</span>
@@ -371,6 +386,7 @@
                                 <span>Delete</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class Roles
+class CheckRole
 {
     /**
      * Handle an incoming request.
@@ -14,11 +14,14 @@ class Roles
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle($request, Closure $next, ...$roles)
+    public function handle(Request $request, Closure $next, ...$roles)
     {
-        if(in_array($request->users()->role,$roles)){
-            return $next($request);
+        foreach ($roles as $role) {
+        if (session('role') == $role) {
+                return $next($request);
+            }
         }
-        return redirect('/');
+
+        return abort('401');
     }
 }
