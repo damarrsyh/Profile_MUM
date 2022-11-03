@@ -4,24 +4,24 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav menu ms-auto">
             <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#gallery">Gallery</a></li>
-            @if (!Request::is("news"))
+            @if (!Request::is("news/index"))
             <li class="nav-item">
-                @if (!Request::is("article"))                    
+                @if (!Request::is("article/index"))                    
                 <a class="nav-link fw-bold fs-5 text-uppercase" href="#services">Services</a>
                 @endif
             </li>
             @endif
-            @if (!Request::is("news"))
+            @if (!Request::is("news/index"))
             <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#services">Article</a></li>
             @endif
-            @if (!Request::is("news"))
+            @if (!Request::is("news/index"))
             <li class="nav-item">
-                @if (!Request::is("article"))
+                @if (!Request::is("article/index"))
                 <a class="nav-link fw-bold fs-5 text-uppercase" href="#about">About</a>
                 @endif
             </li>
             @endif
-            @if (!Request::is("article"))
+            @if (!Request::is("article/index"))
             <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#news">News</a></li>
             @endif
             <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#contact">Contact</a></li>
@@ -29,7 +29,7 @@
         <ul class="navbar-nav menu ms-auto">
             @auth
             <div class="btn-group">
-                <button type="button" class="btn btn-dark fw-bold">Wellcome Back, {{ auth()->user()->username }}</button>
+                <button type="button" class="btn btn-dark fw-bold">{{ auth()->user()->username }}</button>
                 <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="visually-hidden">Toggle Dropdown</span>
                 </button>

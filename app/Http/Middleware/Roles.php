@@ -16,7 +16,7 @@ class Roles
      */
     public function handle($request, Closure $next, ...$roles)
     {
-        if(in_array($request->users()->role,$roles)){
+        if(in_array($request->user()->role, $roles)){
             return $next($request);
         }
         return redirect('/');

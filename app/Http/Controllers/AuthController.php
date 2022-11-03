@@ -46,10 +46,12 @@ class AuthController extends Controller
       'password' => ['required'],
     ]);
 
-    session([
-      'role' => 'admin',
-      'role' => 'user'
-    ]);
+    // $users = User::where('role', $request->role)->first();
+
+    // session([
+    //   'role' => 'admin',
+    //   'role' => 'user'
+    // ]);
     
     if (Auth::attempt($user)) {
       // return response()->json('berhasil login');

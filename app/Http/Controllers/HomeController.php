@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+        // return session('role');
         return view('home.index');
     }
 }

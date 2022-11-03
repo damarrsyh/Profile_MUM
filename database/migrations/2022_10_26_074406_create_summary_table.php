@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('summary', function (Blueprint $table) {
             $table->id();
+            $table->text('nama');
+            $table->string('jumlah');
             $table->timestamps();
         });
     }
