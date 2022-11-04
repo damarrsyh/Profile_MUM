@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class HeaderController extends Controller
 {
-    public function create()
+    public function index()
     {
-        return view('header.create');
+        return view('header.index');
+    }
+    public function edit()
+    {
+        return view('header.edit');
     }
 }

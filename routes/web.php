@@ -1,11 +1,15 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\HeaderController;
+use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\SummaryController;
 use App\Http\Middleware\CheckRole;
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +31,7 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::prefix('article')->group(function(){
     Route::get('/index', [ArticleController::class, 'index']);
+    Route::get('/aindex', [ArticleController::class, 'aindex']);
     Route::get('/create', [ArticleController::class, 'create']);
     Route::post('/store', [ArticleController::class, 'store']);
     Route::get('/edit', [ArticleController::class, 'edit']);
@@ -36,6 +41,7 @@ Route::prefix('article')->group(function(){
 
 Route::prefix('news')->group(function(){
     Route::get('/index', [NewsController::class, 'index']);
+    Route::get('/aindex', [NewsController::class, 'aindex']);
     Route::get('/create', [NewsController::class, 'create']);
     Route::post('/store', [NewsController::class, 'store']);
     Route::get('/edit', [NewsController::class, 'edit']);
@@ -44,11 +50,13 @@ Route::prefix('news')->group(function(){
 });
 
 Route::prefix('header')->group(function(){
+    Route::get('/index', [HeaderController::class, 'index']);
     Route::get('/edit', [HeaderController::class, 'edit']);
     Route::post('/update', [HeaderController::class, 'update']);
 });
 
 Route::prefix('gallery')->group(function(){
+    Route::get('/index', [GalleryController::class, 'index']);
     Route::get('/create', [GalleryController::class, 'create']);
     Route::post('/store', [GalleryController::class, 'store']);
     Route::get('/edit', [GalleryController::class, 'edit']);
@@ -56,11 +64,15 @@ Route::prefix('gallery')->group(function(){
 });
 
 Route::prefix('summary')->group(function(){
+    Route::get('/index', [SummaryController::class, 'index']);
     Route::get('/create', [SummaryController::class, 'create']);
     Route::post('/store', [SummaryController::class, 'store']);
     Route::get('/edit', [SummaryController::class, 'edit']);
     Route::post('/update', [SummaryController::class, 'update']);
+});
 
+Route::prefix('dashboard')->group(function(){
+    Route::get('/index', [AdminController::class, 'index']);
 });
 
 

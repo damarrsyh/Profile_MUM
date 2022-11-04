@@ -41,14 +41,6 @@
                                 <div class="col-lg-8 align-self-baseline">
                                     <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
                                     <hr class="divider" />
-                                    <!-- Button trigger modal -->
-                                    {{-- @if (session('role') == 'admin') --}}
-                                    <a class="btn btn-primary btn-xl" href="/header/edit" style="border-radius: 10px;">
-                                        <div class="wrapper">
-                                            <span>Change Background</span>
-                                        </div>
-                                    </a>
-                                    {{-- @endif --}}
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
@@ -67,14 +59,6 @@
                                 <div class="col-lg-8 align-self-baseline">
                                     <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
                                     <hr class="divider" />
-                                    <!-- Button trigger modal -->
-                                    {{-- @if (session('role') == 'admin') --}}
-                                    <a class="btn btn-primary btn-xl" href="/header/edit" style="border-radius: 10px;">
-                                        <div class="wrapper">
-                                            <span>Change Background</span>
-                                        </div>
-                                    </a>
-                                    {{-- @endif --}}
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
@@ -93,14 +77,6 @@
                                 <div class="col-lg-8 align-self-baseline">
                                     <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
                                     <hr class="divider" />
-                                    <!-- Button trigger modal -->
-                                    {{-- @if (session('role') == 'admin') --}}
-                                    <a class="btn btn-primary btn-xl" href="/header/edit" style="border-radius: 10px;">
-                                        <div class="wrapper">
-                                            <span>Change Background</span>
-                                        </div>
-                                    </a>
-                                    {{-- @endif --}}
                                     <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
                                         <div class="wrapper">
                                             <i class="fa-solid fa-angle-right"></i>
@@ -126,18 +102,6 @@
         <!--Summary-->
         <section class="page-section" id="summary">
             <div class="container-fluid">
-                {{-- @if (session('role') == 'admin')    --}}
-                <a class="btn btn-primary btn-lg my-5 mx-3" href="/summary/delete" style="border-radius: 10px;" data-aos="fade-right" data-aos-duration="2300">
-                    <div class="wrapper">
-                        <span>Delete</span>
-                    </div>
-                </a>
-                <a class="btn btn-primary btn-lg float-end my-5 mx-3" href="/summary/edit" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
-                    <div class="wrapper">
-                        <span>Edit</span>
-                    </div>
-                </a>
-                {{-- @endif --}}
                 <div class="row g-0" data-aos="fade-up" data-aos-duration="2300">
                     <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
                         <div class="my-5 p-3 hov-1">
@@ -185,23 +149,6 @@
         <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid" id="gallery" data-aos="fade-in" data-aos-duration="3000">
-                {{-- @if (session('role') == 'admin')     --}}
-                <a class="btn btn-primary btn-lg mx-3 my-5" href="/gallery/create" style="border-radius: 10px;" data-aos="fade-right" data-aos-duration="2300">
-                    <div class="wrapper">
-                        <span>Create New</span>
-                    </div>
-                </a>
-                <a class="btn btn-primary btn-lg float-end mx-3 my-5" href="/gallery/delete" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
-                    <div class="wrapper">
-                        <span>Delete</span>
-                    </div>
-                </a>
-                <a class="btn btn-primary btn-lg float-end my-5" href="/gallery/edit" style="border-radius: 10px;" data-aos="fade-left" data-aos-duration="2300">
-                    <div class="wrapper">
-                        <span>Edit</span>
-                    </div>
-                </a>
-                {{-- @endif --}}
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">
@@ -262,6 +209,20 @@
         </div>
         <div class="container">
             @yield('page')
+        </div>
+        <!--Structure-->
+        <div class="container px-4 px-lg-5 py-5 my-5" data-aos="fade-up" data-aos-duration="2500" style=" background: #fff;">
+            <h2 class="text-center textheader mt-0 fw-bold">STRUCTURE ORGANIZATION</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col text-center">
+                    <div class="card-group">
+                        <div class="card">
+                            <img src="/assets/media/img/structure/1.png" class="card-img-top">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Clients-->
         <div class="container" data-aos="fade-in" data-aos-duration="2500">
@@ -381,10 +342,11 @@
         <script>
             AOS.init();
         </script>
+
         <script>
-            $(document).ready(function(){
-                
-            })
+            const changeBackground = () => {
+                $('.change-background').click()
+            }
         </script>
     </body>      
 </html>

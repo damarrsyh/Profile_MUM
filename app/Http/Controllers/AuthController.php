@@ -45,20 +45,45 @@ class AuthController extends Controller
       'email' => ['required', 'email'],
       'password' => ['required'],
     ]);
-
-    // $users = User::where('role', $request->role)->first();
-
-    // session([
-    //   'role' => 'admin',
-    //   'role' => 'user'
-    // ]);
     
+    // nnti bikinjuga buat yg laen
+
+    // mirip mirip kan ya?
+    // iya samain aja isi nya, beda nama doang
+
+    // yg laen tu kek gallery sama article news ny kan?
+    // article news kyk nya beda
+    // maksud gua bikin buat ngelola gambar dlu aja
+    // buat header, gallery sama apapun yg ngelola gambar
+
+    // brarti pokus bikin buat dasbord ny dlo ye yg buat ngelola gambar
+    // iya bikin dashboard dlu, mao bikin buat gambar ato artikel dlu sabeb lu
+
+    // tapi yang gallery tu kan ada ni sek
+
+
+    // berrti tambahin field nya
+    // kalo ada text nya biin gitu ae
+    // text yg atas field nya title, bawah nya descriptio
+
+    // w tinggal bikin apanya brarti ni?
+    // bikin tampilan dashboard nya dlu
+    // sama pisahin klo dia user abis login kmna admin kmna
     if (Auth::attempt($user)) {
-      // return response()->json('berhasil login');
-      $request->session()->regenerate();
-      // return true; 
+      $user = User::where('email', $request->email)->first();
+
+      session([
+        'role' => $user->role
+      ]);
       
-      return redirect('/');
+      $request->session()->regenerate();
+      
+      if ($user->role == "admin") {
+        return redirect('dashboard/index');
+      } else {
+        return redirect('/');
+
+      }
     }
 
     return back()->with('error', 'Login error');

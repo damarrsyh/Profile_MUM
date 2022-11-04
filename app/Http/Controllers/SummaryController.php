@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class SummaryController extends Controller
 {
-    public function create()
+    public function index()
     {
-        return view('summary.create');
+        return view('summary.index');
     }
 }

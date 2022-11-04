@@ -57,13 +57,6 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3" id="services">
-                {{-- @if (session('role') == 'admin') --}}
-                <a type="button" class="btn btn-primary d-grid gap-2 col-8 mx-2 mb-5 float-end" href="/article/create" data-aos="fade-left" data-aos-duration="2200">
-                    <div class="wrapper">
-                        <span>Create Article</span>
-                    </div>
-                </a>
-                {{-- @endif --}}
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
                 <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <div class="card-body px-3">
@@ -75,18 +68,6 @@
                                 <span>More</span>
                             </div>
                         </a>
-                        {{-- @if (session('role') == 'admin') --}}
-                        <a type="button" class="btn btn-primary" href="/article/edit">
-                            <div class="wrapper">
-                                <span>Edit</span>
-                            </div>
-                        </a>
-                        <a type="button" class="btn btn-primary" href="/article/delete">
-                            <div class="wrapper">
-                                <span>Delete</span>
-                            </div>
-                        </a>
-                        {{-- @endif --}}
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
@@ -100,18 +81,6 @@
                                 <span>More</span>
                             </div>
                         </a>
-                        {{-- @if (session('role') == 'admin') --}}
-                        <a type="button" class="btn btn-primary" href="/article/edit">
-                        <div class="wrapper">
-                            <span>Edit</span>
-                            </div>
-                        </a>
-                        <a type="button" class="btn btn-primary" href="/article/delete">
-                            <div class="wrapper">
-                                <span>Delete</span>
-                            </div>
-                        </a>
-                        {{-- @endif --}}
                     </div>
                 </div>
             </div>
@@ -282,13 +251,6 @@
                 </ul>
             </div>
             <div class="col-md-4 float-end" id="news">
-                {{-- @if (session('role') == 'admin') --}}
-                <a type="button" class="btn btn-primary d-grid gap-2 col-6 mx-2 mb-5 float-end" href="/news/create" data-aos="fade-left" data-aos-duration="2200">
-                    <div class="wrapper">
-                        <span>Create News</span>
-                    </div>
-                </a>
-                {{-- @endif --}}
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
                     <img src="/assets/media/img/artikel/3.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
                     <div class="card-body px-3">
@@ -300,18 +262,6 @@
                                 <span>More</span>
                             </div>
                         </a>
-                        {{-- @if (session('role') == 'admin')                     --}}
-                        <a type="button" class="btn btn-primary" href="/news/edit">
-                            <div class="wrapper">
-                                <span>Edit</span>
-                            </div>
-                        </a>
-                        <a type="button" class="btn btn-primary" href="/news/delete">
-                            <div class="wrapper">
-                                <span>Delete</span>
-                            </div>
-                        </a>
-                        {{-- @endif --}}
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -325,18 +275,6 @@
                                 <span>More</span>
                             </div>
                         </a>
-                        {{-- @if (session('role') == 'admin') --}}
-                        <a type="button" class="btn btn-primary" href="/news/edit">
-                            <div class="wrapper">
-                                <span>Edit</span>
-                            </div>
-                        </a>
-                        <a type="button" class="btn btn-primary" href="/news/delete">
-                            <div class="wrapper">
-                                <span>Delete</span>
-                            </div>
-                        </a>
-                        {{-- @endif --}}
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -350,18 +288,6 @@
                                 <span>More</span>
                             </div>
                         </a>
-                        {{-- @if (session('role') == 'admin') --}}
-                        <a type="button" class="btn btn-primary" href="/news/edit">
-                            <div class="wrapper">
-                                <span>Edit</span>
-                            </div>
-                        </a>
-                        <a type="button" class="btn btn-primary" href="/news/delete">
-                            <div class="wrapper">
-                                <span>Delete</span>
-                            </div>
-                        </a>
-                        {{-- @endif --}}
                     </div>
                 </div>
                 <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
@@ -375,32 +301,6 @@
                                 <span>More</span>
                             </div>
                         </a>
-                        {{-- @if (session('role') == 'admin') --}}
-                        <a type="button" class="btn btn-primary" href="/news/edit">
-                            <div class="wrapper">
-                                <span>Edit</span>
-                            </div>
-                        </a>
-                        <a type="button" class="btn btn-primary" href="/news/delete">
-                            <div class="wrapper">
-                                <span>Delete</span>
-                            </div>
-                        </a>
-                        {{-- @endif --}}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Structure-->
-    <div class="container px-4 px-lg-5 py-5 my-5" data-aos="fade-up" data-aos-duration="2500" style=" background: #fff;">
-        <h2 class="text-center textheader mt-0 fw-bold">STRUCTURE ORGANIZATION</h2>
-        <hr class="divider" />
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col text-center">
-                <div class="card-group">
-                    <div class="card">
-                        <img src="/assets/media/img/structure/1.png" class="card-img-top">
                     </div>
                 </div>
             </div>
