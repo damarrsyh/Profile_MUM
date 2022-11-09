@@ -2,7 +2,7 @@
 
 @section('page')
 <div class="d-sm-flex align-items-center mb-4">
-  <h1 class="h3 mb-0 mr-3 text-gray-800">Edit Summary Page</h1>
+  <h1 class="h3 mb-0 mr-3 text-gray-800">Create Summary Page</h1>
   <a type="button" class="btn btn-primary" href="/summary/index">
     <div class="wrapper">
       <i class="fa-solid fa-caret-left"></i>
@@ -11,7 +11,7 @@
 </div>
 <div class="row">
   <div class="col-3">
-    <form action="/summary/update/{{ $summary->id }}" method="POST" enctype="multipart/form-data">
+    <form action="/summary/store" method="POST" enctype="multipart/form-data">
       @csrf
       <div class="form-group mb-3">
         <label class="form-label">Name</label>

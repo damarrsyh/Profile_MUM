@@ -10,7 +10,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HeaderController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\SummaryController;
-use App\Http\Middleware\CheckRole;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,49 +29,52 @@ Route::post('/', [AuthController::class, 'authenticate']);
 Route::get('/logout', [AuthController::class, 'logout']);
 Route::get('/', [HomeController::class, 'index']);
 
-Route::prefix('article')->group(function(){
-    Route::get('/index', [ArticleController::class, 'index']);
-    Route::get('/aindex', [ArticleController::class, 'aindex']);
-    Route::get('/create', [ArticleController::class, 'create']);
-    Route::post('/store', [ArticleController::class, 'store']);
-    Route::get('/edit', [ArticleController::class, 'edit']);
-    Route::post('/update', [ArticleController::class, 'update']);
-    Route::get('/destroy', [ArticleController::class, 'destroy']);
-});
-
-Route::prefix('news')->group(function(){
-    Route::get('/index', [NewsController::class, 'index']);
-    Route::get('/aindex', [NewsController::class, 'aindex']);
-    Route::get('/create', [NewsController::class, 'create']);
-    Route::post('/store', [NewsController::class, 'store']);
-    Route::get('/edit', [NewsController::class, 'edit']);
-    Route::post('/update', [NewsController::class, 'update']);
-    Route::get('/destroy', [NewsController::class, 'destroy']);
-});
-
-Route::prefix('header')->group(function(){
+Route::prefix('header')->group(function () {
     Route::get('/index', [HeaderController::class, 'index']);
-    Route::get('/edit', [HeaderController::class, 'edit']);
-    Route::post('/update', [HeaderController::class, 'update']);
+    Route::get('/create', [HeaderController::class, 'create']);
+    Route::get('/edit/{id}', [HeaderController::class, 'edit']);
+    Route::post('/store', [HeaderController::class, 'store']);
+    Route::post('/update/{id}', [HeaderController::class, 'update']);
 });
 
-Route::prefix('gallery')->group(function(){
-    Route::get('/index', [GalleryController::class, 'index']);
-    Route::get('/create', [GalleryController::class, 'create']);
-    Route::post('/store', [GalleryController::class, 'store']);
-    Route::get('/edit', [GalleryController::class, 'edit']);
-    Route::post('/update', [GalleryController::class, 'update']);
-});
-
-Route::prefix('summary')->group(function(){
+Route::prefix('summary')->group(function () {
     Route::get('/index', [SummaryController::class, 'index']);
     Route::get('/create', [SummaryController::class, 'create']);
     Route::post('/store', [SummaryController::class, 'store']);
-    Route::get('/edit', [SummaryController::class, 'edit']);
-    Route::post('/update', [SummaryController::class, 'update']);
+    Route::get('/edit/{id}', [SummaryController::class, 'edit']);
+    Route::post('/update/{id}', [SummaryController::class, 'update']);
 });
 
-Route::prefix('dashboard')->group(function(){
+Route::prefix('gallery')->group(function () {
+    Route::get('/index', [GalleryController::class, 'index']);
+    Route::get('/create', [GalleryController::class, 'create']);
+    Route::get('/edit/{id}', [GalleryController::class, 'edit']);
+    Route::post('/store', [GalleryController::class, 'store']);
+    Route::post('/update/{id}', [GalleryController::class, 'update']);
+    Route::post('/destroy', [GalleryController::class, 'destroy']);
+});
+
+Route::prefix('article')->group(function () {
+    Route::get('/index', [ArticleController::class, 'index']);
+    Route::get('/aindex', [ArticleController::class, 'aindex']);
+    Route::get('/create', [ArticleController::class, 'create']);
+    Route::get('/edit/{id}', [ArticleController::class, 'edit']);
+    Route::post('/store', [ArticleController::class, 'store']);
+    Route::post('/update/{id}', [ArticleController::class, 'update']);
+    Route::get('/destroy', [ArticleController::class, 'destroy']);
+});
+
+Route::prefix('news')->group(function () {
+    Route::get('/index', [NewsController::class, 'index']);
+    Route::get('/aindex', [NewsController::class, 'aindex']);
+    Route::get('/create', [NewsController::class, 'create']);
+    Route::get('/edit/{id}', [NewsController::class, 'edit']);
+    Route::post('/store', [NewsController::class, 'store']);
+    Route::post('/update/{id}', [NewsController::class, 'update']);
+    Route::get('/destroy', [NewsController::class, 'destroy']);
+});
+
+Route::prefix('dashboard')->group(function () {
     Route::get('/index', [AdminController::class, 'index']);
 });
 

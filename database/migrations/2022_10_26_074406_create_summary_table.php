@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->text('nama');
             $table->string('jumlah');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

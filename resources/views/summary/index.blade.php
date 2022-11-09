@@ -24,66 +24,20 @@
                         </tr>
                     </thead>
                     <tbody align="center">
+                        @foreach ($summary as $s)
                         <tr>
-                        <th scope="row">1</th>
-                        <td>Cabang</td>
-                        <td>12</td>
+                        <th scope="row">{{ $loop->iteration }}</th>
+                        <td>{{ $s->nama }}</td>
+                        <td>{{ $s->jumlah }}</td>
                         <td>
-                            <a class="btn btn-primary btn-xl" href="#summary">
+                            <a class="btn btn-success btn-xl" href="/summary/edit/{{ $s->id }}">
                                 <div class="wrapper">
                                     <span>Edit</span>
                                 </div>
                             </a>
                         </td>
                         </tr>
-                        <tr>
-                        <th scope="row">2</th>
-                        <td>Anggota</td>
-                        <td>16.800</td>
-                        <td>
-                            <a class="btn btn-primary btn-xl" href="#summary">
-                                <div class="wrapper">
-                                    <span>Edit</span>
-                                </div>
-                            </a>
-                        </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">3</th>
-                        <td>Staff & AO</td>
-                        <td>206</td>
-                        <td>
-                            <a class="btn btn-primary btn-xl" href="#summary">
-                                <div class="wrapper">
-                                    <span>Edit</span>
-                                </div>
-                            </a>
-                        </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">4</th>
-                        <td>Outstanding</td>
-                        <td>17.158M</td>
-                        <td>
-                            <a class="btn btn-primary btn-xl" href="#summary">
-                                <div class="wrapper">
-                                    <span>Edit</span>
-                                </div>
-                            </a>
-                        </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">5</th>
-                        <td>Angsuran Lancar</td>
-                        <td>86.25%</td>
-                        <td>
-                            <a class="btn btn-primary btn-xl" href="#summary">
-                                <div class="wrapper">
-                                    <span>Edit</span>
-                                </div>
-                            </a>
-                        </td>
-                        </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

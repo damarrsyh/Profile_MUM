@@ -1,405 +1,343 @@
-@extends('layout.main')
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Profile Mitra Usaha Mandiri</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/media/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/assets/css/styles.css" rel="stylesheet" />
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/a2c4039640.js" crossorigin="anonymous"></script>
+        <!--animate aos css-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-1" id="mainNav">
+            @include('home.menu.index')
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead" id="home">
+            <div class="container-fluid p-0">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="/assets/media/img/mum/1.jpg" class="d-block w-100" alt="...">
+                            <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
+                                    <hr class="divider" />
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            <span>More</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="/assets/media/img/mum/2.jpg" class="d-block w-100" alt="...">
+                            <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
+                                    <hr class="divider" />
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            <span>More</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/assets/media/img/mum/3.jpg" class="d-block w-100" alt="...">
+                            <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                                <div class="col-lg-8 align-self-end">
+                                    <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
+                                </div>
+                                <div class="col-lg-8 align-self-baseline">
+                                    <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
+                                    <hr class="divider" />
+                                    <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
+                                        <div class="wrapper">
+                                            <i class="fa-solid fa-angle-right"></i>
+                                            <span>More</span>
+                                        </div>
+                                    </a>
 
-@section('page')
-    <!-- Services-->
-    <div class="container px-4 px-lg-5 py-5 my-5" id="services">
-        <div class="row g-0">
-            <div class="col-6 col-md-9 py-5" style="border-radius: 15px; background: var(--bs-gray-100);">
-                <h2 class="text-center textheader fw-bold" data-aos="fade-in" data-aos-duration="2100">OUR SERVICES PRODUCTS</h2>
-                <hr class="divider"  data-aos="fade-in" data-aos-duration="2200">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal1">
-                            <div class="mb-2"><i class="fa-solid fa-hand-holding-dollar fs-1"  data-aos="fade-in" data-aos-duration="2500"></i></div>
-                            <hr class="divider" data-aos="fade-in" data-aos-duration="2600">
-                            <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2700">PEMBIAYAAN SISTEM GRAMEEN BANK</h3>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal2">
-                            <div class="mb-2" data-aos="fade-in" data-aos-duration="2300"><i class="fa-solid fa-hand-holding-dollar fs-1"></i></div>
-                            <hr class="divider" data-aos="fade-in" data-aos-duration="2400">
-                            <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2500">PEMBIAYAAN KHUSUS</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal3">
-                            <div class="mb-2"><i class="fa-solid fa-coins fs-1"  data-aos="fade-in" data-aos-duration="2500"></i></div>
-                            <hr class="divider" data-aos="fade-in" data-aos-duration="2600">
-                            <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2700">SIMPANAN BERJANGKA (SIMBA)</h3>
-                        </div>
-                    </div>
-                    <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal4">
-                            <div class="mb-2" data-aos="fade-in" data-aos-duration="2300"><i class="fa-solid fa-coins fs-1"></i></div>
-                            <hr class="divider" data-aos="fade-in" data-aos-duration="2400">
-                            <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2500">SIMPANAN SUKARELA</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal5">
-                            <div class="mb-2" data-aos="fade-in" data-aos-duration="2300"><i class="fa-solid fa-person-dress fs-1"></i></div>
-                            <hr class="divider" data-aos="fade-in" data-aos-duration="2400">
-                            <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2500">PELAYANAN KESEHATAN UNTUK PEREMPUAN</h3>
-                        </div>
-                    </div>
-                    <div class="col-6 text-center hov">
-                        <div class="mt-5 hov-1" data-bs-toggle="modal" data-bs-target="#Modal6">
-                            <div class="mb-2"><i class="fa-solid fa-person-dress fs-1"  data-aos="fade-in" data-aos-duration="2500"></i></div>
-                            <hr class="divider" data-aos="fade-in" data-aos-duration="2600">
-                            <h3 class="h4 mb-2 fw-bold px-6" data-aos="fade-in" data-aos-duration="2700">PELAYANAN PENGEMBANGAN WIRAUSAHA PEREMPUAN</h3>
-                        </div>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-3" id="services">
-                <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
-                <img src="assets/media/img/artikel/1.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold">Card title</h5>
-                        <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="btn btn-primary" href="/article/index">
-                            <div class="wrapper">
-                                <span>More</span>
+        </header>
+        <!--Summary-->
+        <section class="page-section" id="summary">
+            <div class="container-fluid">
+                <div class="row g-0" data-aos="fade-up" data-aos-duration="2300">
+                    @foreach ($summaries as $summary)
+                        <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
+                            <div class="my-5 p-3 hov-1">
+                                <div class="mb-2"><img src="/assets/media/img/{{ $summary->image }}" alt="" width="100px"></div>
+                                <hr class="divider">
+                                <h4 class="mb-2 fw-bold">{{ $summary->jumlah }}</h3>
+                                <h3 class="mb-2 fw-bold">{{ $summary->nama }}</h3>
+                            </div>
+                        </div>
+                    @endforeach
+                    {{-- <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
+                        <div class="my-5 p-3 hov-1">
+                            <div class="mb-2"><img src="/assets/media/img/summary/1.png" alt="" width="100px"></div>
+                            <hr class="divider">
+                            <h4 class="mb-2 fw-bold">16.800</h3>
+                            <h3 class="mb-2 fw-bold">ANGGOTA</h3>
+                        </div>
+                    </div>
+                    <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
+                        <div class="my-5 p-3 hov-1">
+                            <div class="mb-2"><img src="/assets/media/img/summary/5.png" alt="" width="100px"></div>
+                            <hr class="divider">
+                            <h4 class="mb-2 fw-bold">206</h3>
+                            <h3 class="mb-2 fw-bold">STAF & AO</h3>
+                        </div>
+                    </div>
+                    <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
+                        <div class="my-5 p-3 hov-1">
+                            <div class="mb-2"><img src="/assets/media/img/summary/4.png" alt="" width="100px"></div>
+                            <hr class="divider">
+                            <h4 class="mb-2 fw-bold"> 17.158M</h3>
+                            <h3 class="mb-2 fw-bold">OUTSTANDING</h3>
+                        </div>
+                    </div>
+                    <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
+                        <div class="my-5 p-3 hov-1">
+                            <div class="mb-2"><img src="/assets/media/img/summary/2.png" alt="" width="100px"></div>
+                            <hr class="divider">
+                            <h4 class="mb-2 fw-bold">86.25%</h3>
+                            <h3 class="mb-2 fw-bold">ANGSURAN LANCAR</h3>
+                        </div>
+                    </div> --}}
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid" id="gallery" data-aos="fade-in" data-aos-duration="3000">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">
+                            <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
+                                <div class="project-name">PELATIHAN FINLIT SUBANG</div>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2200">
-                    <img src="assets/media/img/artikel/2.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold">Card title</h5>
-                        <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="btn btn-primary" href="/article">
-                            <div class="wrapper">
-                                <span>More</span>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" title="LOKAKARYA">
+                            <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
+                                <div class="project-name">LOKAKARYA</div>
                             </div>
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About-->
-    <div class="container px-4 px-lg-5 py-5 my-5" id="about" style="border-radius: 15px; background: var(--bs-gray-100);">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col text-center">
-                <div class="card-header">
-                    <div class="text-center">
-                        <h2 class="section-heading textheader fw-bold" data-aos="fade-in" data-aos-duration="2000">
-                            V & M
-                            <br>
-                            COMPANY
-                        </h2>
-                        <hr class="divider"  data-aos="fade-in" data-aos-duration="2000">
-                    </div>
-                </div>
-                <div class="card-group">
-                    <div class="card text-center">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold fs-1 fw-bold"  data-aos="fade-in" data-aos-duration="2300"> VISI </h5>
-                            <p class="card-text fs-3 fw-bold py-3 px-2 text-muted"  data-aos="fade-in" data-aos-duration="2400">Terwujudnya lembaga ekonomi yang berkeadilan, demokratis dan berwawasan lingkungan yang dapat diakses dan dikontrol oleh masyarakat miskin
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/media/img/misi/1.jpg" class="card-img-top" alt="..." data-aos="fade-in" data-aos-duration="2400">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fs-1 fw-bold py-1 px-3" data-aos="fade-in" data-aos-duration="2600"> MISI </h5>
-                        <p class="card-text fs-3 fw-bold py-3 text-muted" data-aos="fade-in" data-aos-duration="2600">Memberikan pelayanan keuangan mikro kepada kelompok perempuan miskin.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/media/img/misi/2.jpg" class="card-img-top" alt="..." data-aos="fade-in" data-aos-duration="2400">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fs-1 fw-bold py-1 px-3" data-aos="fade-in" data-aos-duration="2600"> MISI </h5>
-                        <p class="card-text fs-3 fw-bold py-3 text-muted" data-aos="fade-in" data-aos-duration="2600">Meningkatkan kapasitas dan kesejahteraan karyawan.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="/assets/media/img/misi/3.jpg" class="card-img-top" alt="..." data-aos="fade-in" data-aos-duration="2400">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fs-1 fw-bold py-1 px-3" data-aos="fade-in" data-aos-duration="2600"> MISI </h5>
-                        <p class="card-text fs-3 fw-bold py-3 text-muted" data-aos="fade-in" data-aos-duration="2600">Memberdayakan masyarakat miskin agar memiliki akses  terhadap sumberdaya ekonomi</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--History-->
-    <div class="container px-4 px-lg-5 py-5 my-5" data-aos="fade-in" data-aos-duration="2000" id="news">
-        <div class="row">
-            <div class="col-md-8 py-5 px-5" style="border-radius: 15px; background: var(--bs-gray-100);">
-                <div class="text-center pb-5">
-                    <h2 class="section-heading textheader fw-bold">MILESTONES</h2>
-                    <hr class="divider">
-                </div>
-                <ul class="timeline">
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>1998
-                                <br>
-                                Awal
-                            </h4>
-                        </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2100">
-                            <div class="timeline-heading">
-                                <h4>Awal Pembentukan</h4>
-                                <h4 class="subheading">Mitra Usaha Mandiri</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="desc text-muted">Tahun 1998 Yayasan Mitra Usaha (YMU) mulai mengembangkan sebuah program 
-                                    untuk melayani Keluarga Miskin dengan mereplikasi model Grameen Bank.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>Lokasi
-                                <br>
-                                Pertama
-                                <br>
-                                MUM
-                            </h4>
-                        </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2200">
-                            <div class="timeline-heading">
-                                <h4>Lokasi</h4>
-                                <h4 class="subheading">Mitra Usaha Mandiri</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="desc text-muted">Lokasi pertama di Kabupaten Bekasi (Propinsi Jawa Barat), Kecamatan Babelan, 
-                                    Desa Muara Bakti. Secara bertahap program tersebut berkembang dibeberapa lokasi, yaitu Desa Harapan 
-                                    Jaya, Desa Taruma Jaya di Kabupaten Bekasi, kemudian di Kabupaten Indramayu, Kabupaten Subang, 
-                                    Kabupaten Karawang (Jatiragas) di Propinsi Jawa Barat. Kemudian bergerak ke Propinsi Jawa Tengah 
-                                    : Kabupaten Rembang – Desa Sulang dan Kabupaten Pati, serta di Kabupaten Klaten, berjumlah 9 (Sembilan) 
-                                    lokasi.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>2001
-                                <br>
-                                Lembaga
-                            </h4>
-                        </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2300">
-                            <div class="timeline-heading">
-                                <h4>Lembaga Otonom</h4>
-                                <h4 class="subheading">Mitra Usaha Mandiri</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="desc text-muted">Setelah tiga tahun dipandang perlu program tersebut menjadi lembaga otonom 
-                                    yang terpisah dari YMU dengan Badan Hukum Koperasi ( oleh Kementrian Koperasi RI pada 1 Mei 2001 
-                                    No. Badan Hukum : 92/BH/MENEG.I/V/2001).</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>2011
-                                <br>
-                                Evaluasi
-                            </h4>
-                        </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2400">
-                            <div class="timeline-heading">
-                                <h4>Evaluasi</h4>
-                                <h4 class="subheading">Mitra Usaha Mandiri</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="desc text-muted">KOPMUM pada tahun 2011 pernah memiliki  9 cabang.   Dalam perkembangnya setelah 
-                                    dilakukan evaluasi dari segi ketepatan lokasi dan efektifitas serta efesiensi maka dilakukan penggabungan 
-                                    dan penutupan sehingga menjadi 6 cabang yang selektif.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>2017
-                                <br>
-                                Cabang
-                            </h4>
-                        </div>
-                        <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2500">
-                            <div class="timeline-heading">
-                                <h4>Cabang</h4>
-                                <h4 class="subheading">Mitra Usaha Mandiri</h4>
-                            </div>
-                            <div class="timeline-body">
-                                <p class="desc text-muted">Sampai dengan tahun 2017 KOPMUM memiliki Cabang di Jawa Barat: Indramayu, Subang dan Karawang. 
-                                    Di Jawa Tengah:  Rembang, Pati dan Klaten.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4 float-end" id="news">
-                <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
-                    <img src="/assets/media/img/artikel/3.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold">Card title</h5>
-                        <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="btn btn-primary" href="/news">
-                            <div class="wrapper">
-                                <span>More</span>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" title="SANTUNAN RUMAH TERKENA GELOMBANG">
+                            <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KEGIATAN SOSIAL</div>
+                                <div class="project-name">SANTUNAN RUMAH TERKENA GELOMBANG</div>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
-                    <img src="/assets/media/img/artikel/4.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold">Card title</h5>
-                        <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="btn btn-primary" href="/news">
-                            <div class="wrapper">
-                                <span>More</span>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" title="PELATIHAN FINLIT SUBANG">
+                            <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
+                                <div class="project-name">PELATIHAN FINLIT SUBANG</div>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
-                    <img src="/assets/media/img/artikel/5.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold">Card title</h5>
-                        <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="btn btn-primary" href="/news">
-                            <div class="wrapper">
-                                <span>More</span>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" title="RAPAT KOORDINASI">
+                            <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
+                                <div class="project-name">RAPAT KOORDINASI</div>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
-                    <img src="/assets/media/img/artikel/6.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
-                    <div class="card-body px-3">
-                        <h5 class="card-title fw-bold">Card title</h5>
-                        <p class="card-text desc">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <!-- Button trigger modal -->
-                        <a type="button" class="btn btn-primary" href="/news">
-                            <div class="wrapper">
-                                <span>More</span>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" title="SANTUNAN ANAK YATIM">
+                            <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">KEGIANTAN SOSIAL</div>
+                                <div class="project-name">SANTUNAN ANAK YATIM</div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-light" id="ModalLabel1">Pembiayaan Sistem Grameen Bank</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="container">
+            @include('home.services.index')
+            @include('home.about.index')
+            @include('home.history.index')
+            @include('home.structure.index')
+        </div>
+        <!-- Clients-->
+        <div class="container" data-aos="fade-in" data-aos-duration="2500">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img class="img-fluid img-brand d-block mx-auto" src="/assets/media/img/logos/Danamon.svg"
+                            alt="..." aria-label="Danamon Logo" />
                 </div>
-                <div class="modal-body">
-                <p>Metode Grameen Bank merupakan program penyaluran kredit mikro yang ditujukan bagi golongan masyarakat miskin di pedesaan.</p>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img class="img-fluid img-brand d-block mx-auto" src="/assets/media/img/logos/prudential.svg"
+                            alt="..." aria-label="Prudential Logo" />
                 </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img class="img-fluid img-brand d-block mx-auto" src="/assets/media/img/logos/grameentrust.jpg"
+                            alt="..." aria-label="grameentrust Logo" />
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <img class="img-fluid img-brand d-block mx-auto" src="/assets/media/img/logos/mercy.png"
+                            alt="..." aria-label="Mercy Logo" />
                 </div>
             </div>
         </div>
-    </div>
-    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-light" id="ModalLabel2">Pembiayaan Khusus</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5" data-aos="fade-in" data-aos-duration="2500">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0 textheader fw-bold">CONTACT</h2>
+                        <hr class="divider" />
+                    </div>
                 </div>
-                <div class="modal-body">
-                ...
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-light" id="ModalLabel3">Simpanan Berjangka(SIMBA)</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                <p> Simpanan Berjangka adalah simpanan di koperasi yang penyetorannya dilakukan sekali dan penarikannya hanya dapat dilakukan pada waktu tertentu menurut perjanjian antara penyimpan dengan koperasi yang bersangkutan.</p>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-light" id="ModalLabel4">Simpanan Sukarela</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                <p>Simpanan sukarela adalah iuran yang dibayar oleh anggota koperasi secara sukarela atau tidak ada paksaan dimana besarnya iuran sesuai dengan kemampuan masing-masing anggota. Simpanan ini bisa diambil sewaktu-waktu sesuai dengan jumlah simpanan anggota yang bersangkutan.</p>
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel5" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-light" id="ModalLabel5">Pelayanan Kesehatan Untuk Perempuan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel6" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title text-light" id="ModalLabel6">Pelayanan Pengembangan Wirausaha Perempuan</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                        <div>(021) 212 796 62</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-@endsection
+            
+        </section>
+        <!-- Footer-->
+        <footer class="bg-dark py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2022 - Mitra Usaha Mandiri</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/assets/js/scripts.js"></script>
+        <!--Jquery-->
+        <script src="/assets/js/jquery-3.6.1.min.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--aos css-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+            const changeBackground = () => {
+                $('.change-background').click()
+            }
+        </script>
+    </body>      
+</html>

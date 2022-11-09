@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->text('judul');
-            $table->text('gambar');
-            $table->text('deskripsi');
+            $table->string('title');
+            $table->string('image')->nullable();
+            $table->text('description');
             $table->timestamps();
         });
     }
