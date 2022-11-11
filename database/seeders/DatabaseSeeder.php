@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Summary;
+use App\Models\Header;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -29,6 +32,48 @@ class DatabaseSeeder extends Seeder
             'email' => 'damar@gmail.com',
             'password' => bcrypt('damar'),
             'role' => 'user'
+        ]);
+
+        Summary::create([
+            'nama' => 'Cabang',
+            'jumlah' => '12',
+            'image' => 'summary/3.png',
+            
+        ]);
+        Summary::create([
+            'nama' => 'Anggota',
+            'jumlah' => '16.800',
+            'image' => 'summary/1.png',
+
+        ]);
+        Summary::create([
+            'nama' => 'Staff & AO',
+            'jumlah' => '206',
+            'image' => 'summary/5.png',
+
+        ]);
+        Summary::create([
+            'nama' => 'Outstanding',
+            'jumlah' => '17.158M',
+            'image' => 'summary/4.png',
+
+        ]);
+        Summary::create([
+            'nama' => 'Angsuran Lancar',
+            'jumlah' => '86.25%',
+            'image' => 'summary/2.png',
+        ]);
+
+        Header::create([
+            'image' => 'mum/1.jpg'
+        ]);
+
+        Header::create([
+            'image' => 'mum/2.jpg'
+        ]);
+
+        Header::create([
+            'image' => 'mum/3.jpg'
         ]);
     }
 }

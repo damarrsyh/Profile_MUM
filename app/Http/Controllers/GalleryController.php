@@ -65,8 +65,12 @@ class GalleryController extends Controller
         return redirect('/gallery/index');
     }
 
-    public function destroy()
+    public function destroy(Request $request)
     {
-        
+        if($request->image) {
+            Storage::delete($request->image);
+        }
+        Gallery::destroy($request->id);
+        return redirect('/gallery/index');
     }
 }

@@ -4,15 +4,25 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Article;
+use App\Models\Header;
+use App\Models\Summary;
+use App\Models\Gallery;
 use Illuminate\Support\Facades\Storage;
 
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function index($id)
     {
+        return 'masuk';
         $article = Article::all();
-        return view('article.index', ['article' => $article]);
+        return view('article.index', [
+            'article' => $article,
+            'headers' => Header::all(),
+            'summaries' => Summary::all(),
+            'galleries' => Gallery::all(),
+            'article' => Article::where('id', $id)->first()
+        ]);
     }
 
     public function aindex()
@@ -69,6 +79,15 @@ class ArticleController extends Controller
             $article_data['image'] = $request->file('image')->store('article_image');
         }
         Article::where('id', $id)->update($article_data);
+        return redirect('/article/aindex');
+    }
+    
+    public function destroy(Request $request)
+    {
+        if($request->image) {
+            Storage::delete($request->image);
+        }
+        Article::destroy($request->id);
         return redirect('/article/aindex');
     }
 

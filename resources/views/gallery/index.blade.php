@@ -37,7 +37,7 @@
                             <a href="/gallery/edit/{{ $gallery->id }}" class="btn btn-success mx-3">Edit</a>
                             <form class="d-inline" action="/gallery/destroy/{{ $gallery->id }}" method="POST">
                                 @csrf
-                                <button class="btn btn-danger">Delete</button>
+                                <button class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
                             </form>
                         </td>
                     </tr>

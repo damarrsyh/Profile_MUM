@@ -71,4 +71,13 @@ class newsController extends Controller
         News::where('id', $id)->update($news_data);
         return redirect('/news/aindex');
     }
+    
+    public function destroy(Request $request)
+    {
+        if($request->image) {
+            Storage::delete($request->image);
+        }
+        News::destroy($request->id);
+        return redirect('/news/aindex');
+    }
 }

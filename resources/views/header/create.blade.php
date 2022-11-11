@@ -10,7 +10,7 @@
   </a>
 </div>
 <div class="row">
-  <div class="col-6">
+  <div class="col-3">
     <form action="/header/store" method="POST" enctype="multipart/form-data">
       @csrf
       <label for="" class="form-label">Image</label>

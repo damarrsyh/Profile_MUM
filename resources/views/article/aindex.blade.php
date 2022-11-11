@@ -32,13 +32,12 @@
                                 <td class="col-2">{{ $article->title }}</td>
                                 <td class="col-2"><img src="{{ asset("storage/$article->image") }}" alt="" width="200px" height="140px"></td>
                                 <td class="col-5">
-                                        {{ Str::limit($article->description, 150, '...') }}</td>
+                                        {{ Str::limit($article->description, 400, '...') }}</td>
                                 <td class="col-3">
                                     <a href="/article/edit/{{ $article->id }}" class="btn btn-success mx-3">Edit</a>
-                                    <form class="d-inline" action="" method="POST">
-                                        @method('delete')
+                                    <form class="d-inline" action="/article/destroy/{{ $article->id }}" method="POST">
                                         @csrf
-                                        <button class="btn btn-danger">Delete</button>
+                                        <button class="btn btn-danger" onclick="return confirm('Delete This Article?')">Delete</button>
                                     </form>
                                 </td>
                             </tr>

@@ -210,7 +210,6 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-
                 @yield('page')
                 </div>
                 <!-- /.container-fluid -->

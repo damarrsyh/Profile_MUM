@@ -14,7 +14,7 @@
     <form action="/news/update/{{ $news->id }}" method="POST" enctype="multipart/form-data">
       @csrf
       <label for="" class="form-label">Image</label>
-      <input type="hidden" name="oldImage" value="{{ $news->oldImage }}">
+      <input type="hidden" name="oldImage" value="{{ $news->image }}">
       <div class="custom-file mb-3">
         <input type="file" class="custom-file-input" id="image" name="image">
         <label class="custom-file-label" for="image">Choose file</label>
