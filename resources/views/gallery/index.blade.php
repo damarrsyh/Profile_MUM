@@ -29,7 +29,7 @@
                     @foreach ($galleries as $gallery)    
                     <tr>
                         <th scope="row">{{ $loop->iteration }}</th>
-                        <td><img src="{{ asset("storage/$gallery->image") }}" alt="" width="100px"
+                        <td><img src="{{ asset('storage/'. $gallery->image) }}" alt="" width="100px"
                             height="50px"></td>
                         <td>{{ $gallery->title }}</td>
                         <td>{{ $gallery->description }}</td>

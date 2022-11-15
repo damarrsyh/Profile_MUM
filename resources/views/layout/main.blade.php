@@ -22,6 +22,11 @@
         <script src="https://kit.fontawesome.com/a2c4039640.js" crossorigin="anonymous"></script>
         <!--animate aos css-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Custom fonts for this template-->
+        <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <!-- Custom styles for this template-->
+        <link href="/assets/css/sb-admin-2.min.css" rel="stylesheet">
     </head>
 </head>
 <body>
@@ -36,60 +41,20 @@
         <div class="container-fluid p-0">
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="/assets/media/img/mum/1.jpg" class="d-block w-100" alt="...">
+                    @foreach ($headers as $key => $header)                        
+                    <div class="carousel-item {{ $key == 0 ? 'active' : '' }} ">
+                        <img src="/assets/media/img/{{ $header->image }}" class="d-block w-100" alt="...">
                         <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                             <div class="col-lg-8 align-self-end">
                                 <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
                             </div>
                             <div class="col-lg-8 align-self-baseline">
                                 <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
-                                <hr class="divider" />
-                                <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                    <div class="wrapper">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <span>More</span>
-                                    </div>
-                                </a>
+                                <hr class="divider"/>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item active">
-                        <img src="/assets/media/img/mum/2.jpg" class="d-block w-100" alt="...">
-                        <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                            <div class="col-lg-8 align-self-end">
-                                <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
-                            </div>
-                            <div class="col-lg-8 align-self-baseline">
-                                <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
-                                <hr class="divider" />
-                                <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                    <div class="wrapper">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <span>More</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/assets/media/img/mum/3.jpg" class="d-block w-100" alt="...">
-                        <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                            <div class="col-lg-8 align-self-end">
-                                <h1 class="text-white fw-bold text-uppercase" style="letter-spacing: 5px; font-size: 50px; text-shadow: 3px 3px 3px #000;">KSP Mitra Usaha Mandiri</h1>
-                            </div>
-                            <div class="col-lg-8 align-self-baseline">
-                                <p class="text-white-75 mb-3 fs-1" style="text-shadow: 3px 3px 3px #000;">Mandiri, Berdaya, Sejahtera</p>
-                                <hr class="divider" />
-                                <a class="btn btn-primary btn-xl" href="#summary" style="border-radius: 10px;">
-                                    <div class="wrapper">
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <span>More</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,60 +88,17 @@
     <div id="portfolio">
         <div class="container-fluid my-5" id="portfolio" data-aos="fade-in" data-aos-duration="1000">
             <div class="row g-0">
+                @foreach ($galleries as $key => $gallery)                    
                 <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">
-                        <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" alt="..." />
+                    <a class="portfolio-box" href="{{ asset('storage/' . $gallery->image) }}" title="{{ $gallery->description }}">
+                        <img class="img-fluid" src="{{ asset('storage/' . $gallery->image) }}" alt="..." />
                         <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
-                            <div class="project-name">PELATIHAN FINLIT SUBANG</div>
+                            <div class="project-category text-white-50">{{ $gallery->title }}</div>
+                            <div class="project-name">{{ $gallery->description }}</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" title="LOKAKARYA">
-                        <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
-                            <div class="project-name">LOKAKARYA</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" title="SANTUNAN RUMAH TERKENA GELOMBANG">
-                        <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">KEGIATAN SOSIAL</div>
-                            <div class="project-name">SANTUNAN RUMAH TERKENA GELOMBANG</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" title="PELATIHAN FINLIT SUBANG">
-                        <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
-                            <div class="project-name">PELATIHAN FINLIT SUBANG</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" title="RAPAT KOORDINASI">
-                        <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" alt="..." />
-                        <div class="portfolio-box-caption">
-                            <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
-                            <div class="project-name">RAPAT KOORDINASI</div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" title="SANTUNAN ANAK YATIM">
-                        <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" alt="..." />
-                        <div class="portfolio-box-caption p-3">
-                            <div class="project-category text-white-50">KEGIANTAN SOSIAL</div>
-                            <div class="project-name">SANTUNAN ANAK YATIM</div>
-                        </div>
-                    </a>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -320,5 +242,22 @@
             $('.change-background').click()
         }
     </script>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="/assets/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="/assets/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="/assets/js/demo/chart-area-demo.js"></script>
+    <script src="/assets/js/demo/chart-pie-demo.js"></script>
 </body>
 </html>

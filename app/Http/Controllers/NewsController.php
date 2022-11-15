@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\news;
+use App\Models\Header;
+use App\Models\Summary;
+use App\Models\Gallery;
 use Illuminate\Support\Facades\Storage;
 
 
@@ -12,7 +15,12 @@ class newsController extends Controller
     public function index()
     {
         $news = News::all();
-        return view('news.index', ['news' => $news]);
+        return view('news.index', [
+            'news' => $news,
+            'headers' => Header::all(),
+            'summaries' => Summary::all(),
+            'galleries' => Gallery::all()
+        ]);
     }
 
     public function aindex()

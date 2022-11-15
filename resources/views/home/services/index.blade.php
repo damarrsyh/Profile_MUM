@@ -1,4 +1,4 @@
-<div class="container my-5" id="services">
+<div class="container my-5 px-5" id="services">
 <div class="row g-0">
     <div class="col-6 col-md-9 py-5" style="border-radius: 15px; background: var(--bs-gray-100);">
         <h2 class="text-center textheader fw-bold" data-aos="fade-in" data-aos-duration="1100">OUR SERVICES PRODUCTS</h2>

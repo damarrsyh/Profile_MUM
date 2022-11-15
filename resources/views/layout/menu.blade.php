@@ -29,24 +29,45 @@
             @endif
             <li class="nav-item"><a class="nav-link fw-bold fs-5 text-uppercase" href="#contact">Contact</a></li>
         </ul>
-        <ul class="navbar-nav menu ms-auto">
+        <ul class="navbar-nav ml-auto">
             @auth
-            <div class="btn-group">
-                <button type="button" class="btn btn-dark fw-bold">{{ auth()->user()->username }}</button>
-                <button type="button" class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="visually-hidden">Toggle Dropdown</span>
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2  text-light-600 text-uppercase">{{ auth()->user()->username }}</span>
+                    <img class="img-profile rounded-circle"
+                        src="/assets/media/img/undraw_profile.svg">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                    aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Settings
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/logout">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Logout
+                    </a>
+                </div>
+                @else
+                <button type="button" class="btn btn-success fw-bold">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link ms-auto fw-bold fs-5 px-3" href="/sign_in">Sign In</a></li>
+                    </ul>
                 </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                </ul>
-            </div>
-            @else
-            <button type="button" class="btn btn-dark fw-bold">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link ms-auto fw-bold fs-5 px-3" href="/sign_in">Sign In</a></li>
-                </ul>
-            </button>
-            @endauth
+                @endauth
+            </li>
         </ul>
     </div>
 </div>
+
+

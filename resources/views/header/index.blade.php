@@ -29,7 +29,7 @@
             <tr>
               <th scope="row">{{ $loop->iteration }}</th>
               <td>Gambar {{ $key + 1 }}</td>
-              <td><img src="{{ asset('storage/' . $header->image) }}" alt="" width="100px" height="60px"></td>
+              <td><img src="/assets/media/img/{{ $header->image }}" alt="" width="100px" height="60px"></td>
               <td>
                 <a href="/header/edit/{{ $header->id }}" class="btn btn-success mx-3">Edit</a>
               </td>
