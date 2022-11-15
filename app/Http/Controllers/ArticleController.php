@@ -14,14 +14,13 @@ class ArticleController extends Controller
 {
     public function index($id)
     {
-        return 'masuk';
+        // return 'masuk';
         $article = Article::all();
         return view('article.index', [
             'article' => $article,
             'headers' => Header::all(),
             'summaries' => Summary::all(),
-            'galleries' => Gallery::all(),
-            'article' => Article::where('id', $id)->first()
+            'galleries' => Gallery::all()
         ]);
     }
 

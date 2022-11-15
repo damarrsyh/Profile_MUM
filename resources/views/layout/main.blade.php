@@ -34,7 +34,6 @@
     {{-- Header --}}
     <header class="masthead" id="home">
         <div class="container-fluid p-0">
-            @foreach ($headers as $header)
             <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
@@ -55,7 +54,7 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="carousel-item active">
+                    <div class="carousel-item active">
                         <img src="/assets/media/img/mum/2.jpg" class="d-block w-100" alt="...">
                         <div class="row text-masthead gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                             <div class="col-lg-8 align-self-end">
@@ -90,7 +89,7 @@
                                 </a>
                             </div>
                         </div>
-                    </div> --}}
+                    </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -101,98 +100,94 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            @endforeach
         </div>
     </header>
 
-{{-- Summary --}} 
-        <div class="container-fluid">
-            <div class="row g-0" data-aos="fade-up" data-aos-duration="2300">
-                @foreach ($summaries as $summary)
-                    <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
-                        <div class="my-5 p-3 hov-1">
-                            <div class="mb-2"><img src="/assets/media/img/{{ $summary->image }}" alt="" width="100px"></div>
-                            <hr class="divider">
-                            <h4 class="mb-2 fw-bold">{{ $summary->jumlah }}</h3>
-                            <h3 class="mb-2 fw-bold">{{ $summary->nama }}</h3>
-                        </div>
+    {{-- Summary --}} 
+    <div class="container-fluid my-5">
+        <div class="row g-0" data-aos="fade-up" data-aos-duration="1300">
+            @foreach ($summaries as $summary)
+                <div class="col hov mx-3 text-center bg-light" style="border-radius: 15px;">
+                    <div class="my-5 p-3 hov-1">
+                        <div class="mb-2"><img src="/assets/media/img/{{ $summary->image }}" alt="" width="100px"></div>
+                        <hr class="divider">
+                        <h4 class="mb-2 fw-bold">{{ $summary->jumlah }}</h3>
+                        <h3 class="mb-2 fw-bold">{{ $summary->nama }}</h3>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
-    </section>
+    </div>
 
     {{-- Gallery --}}
-    <section class="page-section" id="portofolio">
-        <div id="portfolio">
-            <div class="container-fluid" id="gallery" data-aos="fade-in" data-aos-duration="3000">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">
-                            <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
-                                <div class="project-name">PELATIHAN FINLIT SUBANG</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" title="LOKAKARYA">
-                            <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
-                                <div class="project-name">LOKAKARYA</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" title="SANTUNAN RUMAH TERKENA GELOMBANG">
-                            <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">KEGIATAN SOSIAL</div>
-                                <div class="project-name">SANTUNAN RUMAH TERKENA GELOMBANG</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" title="PELATIHAN FINLIT SUBANG">
-                            <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
-                                <div class="project-name">PELATIHAN FINLIT SUBANG</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" title="RAPAT KOORDINASI">
-                            <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
-                                <div class="project-name">RAPAT KOORDINASI</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" title="SANTUNAN ANAK YATIM">
-                            <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">KEGIANTAN SOSIAL</div>
-                                <div class="project-name">SANTUNAN ANAK YATIM</div>
-                            </div>
-                        </a>
-                    </div>
+    <div id="portfolio">
+        <div class="container-fluid my-5" id="portfolio" data-aos="fade-in" data-aos-duration="1000">
+            <div class="row g-0">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" title="PELATIHAN FINLIT SUBANG">
+                        <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 6.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
+                            <div class="project-name">PELATIHAN FINLIT SUBANG</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" title="LOKAKARYA">
+                        <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/LOKAKARYA.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
+                            <div class="project-name">LOKAKARYA</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" title="SANTUNAN RUMAH TERKENA GELOMBANG">
+                        <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN RUMAH REMBANG.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">KEGIATAN SOSIAL</div>
+                            <div class="project-name">SANTUNAN RUMAH TERKENA GELOMBANG</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" title="PELATIHAN FINLIT SUBANG">
+                        <img class="img-fluid" src="/assets/media/img/galeri/Pelatihan/PELATIHAN FINLIT SUBANG 1.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">KEGIATAN PELATIHAN</div>
+                            <div class="project-name">PELATIHAN FINLIT SUBANG</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" title="RAPAT KOORDINASI">
+                        <img class="img-fluid" src="/assets/media/img/galeri/Lembaga/RAPAT KOORDINASI.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                            <div class="project-category text-white-50">KEGIATAN LEMBAGA</div>
+                            <div class="project-name">RAPAT KOORDINASI</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box" href="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" title="SANTUNAN ANAK YATIM">
+                        <img class="img-fluid" src="/assets/media/img/galeri/Sosial/SANTUNAN ANAK YATIM.jpeg" alt="..." />
+                        <div class="portfolio-box-caption p-3">
+                            <div class="project-category text-white-50">KEGIANTAN SOSIAL</div>
+                            <div class="project-name">SANTUNAN ANAK YATIM</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     {{-- Content --}}
-    <div class="container">
+    <div class="container my-5">
         @yield('page')
     </div>
 
     <!-- Clients-->
-    <div class="container" data-aos="fade-in" data-aos-duration="2500">
+    <div class="container my-5 py-5" data-aos="fade-in" data-aos-duration="1500">
         <div class="row align-items-center">
             <div class="col-md-3 col-sm-6 my-3">
                 <img class="img-fluid img-brand d-block mx-auto" src="/assets/media/img/logos/Danamon.svg"
@@ -214,79 +209,77 @@
     </div>
 
     <!-- Contact-->
-    <section class="page-section" id="contact">
-        <div class="container px-4 px-lg-5" data-aos="fade-in" data-aos-duration="2500">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0 textheader fw-bold">CONTACT</h2>
-                    <hr class="divider" />
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                    <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                    <div>(021) 212 796 62</div>
-                </div>
+    <div class="container my-5 py-5" data-aos="fade-in" data-aos-duration="1500">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6 text-center">
+                <h2 class="mt-0 textheader fw-bold">CONTACT</h2>
+                <hr class="divider" />
             </div>
         </div>
-    </section>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn btn btn-xl disabled btn-primary" id="submitButton" type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                <div>(021) 212 796 62</div>
+            </div>
+        </div>
+    </div>
 
     {{-- Footer --}}
     <footer class="bg-dark py-5">

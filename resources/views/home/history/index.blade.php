@@ -1,4 +1,4 @@
-<div class="container px-4 px-lg-5 py-5 my-5" data-aos="fade-in" data-aos-duration="2000" id="news">
+<div class="container" data-aos="fade-in" data-aos-duration="1000" id="news">
   <div class="row">
       <div class="col-md-8 py-5 px-5" style="border-radius: 15px; background: var(--bs-gray-100);">
           <div class="text-center pb-5">
@@ -13,7 +13,7 @@
                           Awal
                       </h4>
                   </div>
-                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2100">
+                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1100">
                       <div class="timeline-heading">
                           <h4>Awal Pembentukan</h4>
                           <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -33,7 +33,7 @@
                           MUM
                       </h4>
                   </div>
-                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2200">
+                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1200">
                       <div class="timeline-heading">
                           <h4>Lokasi</h4>
                           <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -55,7 +55,7 @@
                           Lembaga
                       </h4>
                   </div>
-                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2300">
+                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1300">
                       <div class="timeline-heading">
                           <h4>Lembaga Otonom</h4>
                           <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -74,7 +74,7 @@
                           Evaluasi
                       </h4>
                   </div>
-                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2400">
+                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1400">
                       <div class="timeline-heading">
                           <h4>Evaluasi</h4>
                           <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -93,7 +93,7 @@
                           Cabang
                       </h4>
                   </div>
-                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="2500">
+                  <div class="timeline-panel" data-aos="fade-in" data-aos-duration="1500">
                       <div class="timeline-heading">
                           <h4>Cabang</h4>
                           <h4 class="subheading">Mitra Usaha Mandiri</h4>
@@ -107,7 +107,7 @@
           </ul>
       </div>
       <div class="col-md-4 float-end" id="news">
-          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
+          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1100">
               <img src="/assets/media/img/artikel/3.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
               <div class="card-body px-3">
                   <h5 class="card-title fw-bold">Card title</h5>
@@ -120,7 +120,7 @@
                   </a>
               </div>
           </div>
-          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
+          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1100">
               <img src="/assets/media/img/artikel/4.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
               <div class="card-body px-3">
                   <h5 class="card-title fw-bold">Card title</h5>
@@ -133,7 +133,7 @@
                   </a>
               </div>
           </div>
-          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
+          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1100">
               <img src="/assets/media/img/artikel/5.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
               <div class="card-body px-3">
                   <h5 class="card-title fw-bold">Card title</h5>
@@ -146,7 +146,7 @@
                   </a>
               </div>
           </div>
-          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="2100">
+          <div class="card artikel float-end pb-3 mb-5" style="width: 18rem;" data-aos="fade-left" data-aos-duration="1100">
               <img src="/assets/media/img/artikel/6.jpg" class="card-img-top" alt="..." style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
               <div class="card-body px-3">
                   <h5 class="card-title fw-bold">Card title</h5>
