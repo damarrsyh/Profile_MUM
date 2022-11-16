@@ -65,7 +65,7 @@ Route::prefix('article')->group(function () {
 });
 
 Route::prefix('news')->group(function () {
-    Route::get('/index', [NewsController::class, 'index']);
+    Route::get('/index/{id}', [NewsController::class, 'index']);
     Route::get('/aindex', [NewsController::class, 'aindex']);
     Route::get('/create', [NewsController::class, 'create']);
     Route::post('/store', [NewsController::class, 'store']);

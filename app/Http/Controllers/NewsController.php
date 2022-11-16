@@ -12,11 +12,10 @@ use Illuminate\Support\Facades\Storage;
 
 class newsController extends Controller
 {
-    public function index()
+    public function index($id)
     {
-        $news = News::all();
         return view('news.index', [
-            'news' => $news,
+            'news' => News::where('id', $id)->first(),
             'headers' => Header::all(),
             'summaries' => Summary::all(),
             'galleries' => Gallery::all()

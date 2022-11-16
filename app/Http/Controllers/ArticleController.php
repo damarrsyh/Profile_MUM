@@ -17,7 +17,7 @@ class ArticleController extends Controller
         // return 'masuk';
         $article = Article::all();
         return view('article.index', [
-            'article' => $article,
+            'article' => Article::where('id', $id)->first(),
             'headers' => Header::all(),
             'summaries' => Summary::all(),
             'galleries' => Gallery::all()

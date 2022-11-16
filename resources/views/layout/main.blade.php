@@ -22,11 +22,11 @@
         <script src="https://kit.fontawesome.com/a2c4039640.js" crossorigin="anonymous"></script>
         <!--animate aos css-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <!-- Custom fonts for this template-->
+        {{-- <!-- Custom fonts for this template-->
         <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"> --}}
         <!-- Custom styles for this template-->
-        <link href="/assets/css/sb-admin-2.min.css" rel="stylesheet">
+        {{-- <link href="/assets/css/sb-admin-2.min.css" rel="stylesheet"> --}}
     </head>
 </head>
 <body>
@@ -131,7 +131,7 @@
     </div>
 
     <!-- Contact-->
-    <div class="container my-5 py-5" data-aos="fade-in" data-aos-duration="1500">
+    <div class="container my-5 py-5" id="contact" data-aos="fade-in" data-aos-duration="1500">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8 col-xl-6 text-center">
                 <h2 class="mt-0 textheader fw-bold">CONTACT</h2>
@@ -243,7 +243,7 @@
         }
     </script>
 
-    <!-- Bootstrap core JavaScript-->
+    {{-- <!-- Bootstrap core JavaScript-->
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -258,6 +258,6 @@
 
     <!-- Page level custom scripts -->
     <script src="/assets/js/demo/chart-area-demo.js"></script>
-    <script src="/assets/js/demo/chart-pie-demo.js"></script>
+    <script src="/assets/js/demo/chart-pie-demo.js"></script> --}}
 </body>
 </html>
